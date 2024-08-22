@@ -8,6 +8,10 @@ class ListViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
     authentication_classes = [authentication.TokenAuthentication]
 
+    def get_queryset(self):
+        user = self.request.user
+        return List.objects.filter(owner=user)
+
 
 class ItemViewSet(viewsets.ModelViewSet):
     queryset = Item.objects.all()
