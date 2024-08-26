@@ -1,9 +1,8 @@
 import React from "react";
 import ListComponent from "./ListComponent";
-import LoginComponent from "./LoginComponent";
 
 export default class UserLists extends React.Component{
-    state = { lists: [], loading: false }
+    state = { lists: [], loading: true }
 
     async componentDidMount(){
         const config = {
@@ -22,15 +21,11 @@ export default class UserLists extends React.Component{
     render()
     {
         const listsApi = this.state.lists;
-        var token = localStorage.getItem('token');
 
-        if(!token)
-            return <LoginComponent />
-        else
-            return (
-                <div>
-                    {listsApi.map(list => <ListComponent key={list.id} listName={list.name} items={list.item_set} />)}
-                </div>
-            );
+        return (
+            <div>
+                {listsApi.map(list => <ListComponent key={list.id} listName={list.name} items={list.item_set} />)}
+            </div>
+        );
     };
 }
