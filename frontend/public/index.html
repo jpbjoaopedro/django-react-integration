@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/main.css" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,20 +23,119 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <title>React App</title>
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body class="">
+  <!-- Header -->
+  <header id="header" class="alt">
+    <a href="#menu">Menu</a>
+  </header><!-- Nav --><!-- Banner -->
+  <section id="banner">
+    <div class="inner">
+      <header>
+        <h1>App React e Django lista de tarefas</h1>
+        <p>Integrando o React e o Django do zero a nuvem.</p>
+      </header><a href="#login" class="button big scrolly">Login</a>
+    </div>
+  </section><!-- Main -->
+  <div id="main">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <!-- Section -->
+    <section id='login' class="wrapper style1">
+      <div class="inner">
+        <h2>Login</h2>
+        <div id="root"></div>
+      </div>
+    </section><!-- Section -->
+
+    <section class="wrapper style2">
+      <div class="inner">
+        <div class="flex flex-2">
+          <div class="col col2">
+            <h3>Suspendisse quis massa vel justo</h3>
+            <p>Etiam posuere hendrerit arcu, ac blandit nulla. Sed congue malesuada nibh, a varius odio vehicula
+              aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex
+              blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at
+              fermentum iaculis, nunc justo dictum dui, non aliquet erat nibh non ex.</p>
+            <p>Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin
+              aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit
+              fermentum, porta augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet
+              erat nibh non ex. </p>
+            <a href="#" class="button">Learn More</a>
+          </div>
+          <div class="col col1 first">
+            <div class="image round fit">
+              <a href="generic.html" class="link"><img src="images/pic02.jpg" alt="" width="320" height="320"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- Section -->
+    <section class="wrapper style1">
+      <div class="inner">
+        <header class="align-center">
+          <h2>Aliquam ipsum purus dolor</h2>
+          <p>Cras sagittis turpis sit amet est tempus, sit amet consectetur purus tincidunt.</p>
+        </header>
+        <div class="flex flex-3">
+          <div class="col align-center">
+            <div class="image round fit">
+              <img src="images/pic03.jpg" alt="" width="320" height="320">
+            </div>
+            <p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin
+              aliquet. </p>
+            <a href="#" class="button">Learn More</a>
+          </div>
+          <div class="col align-center">
+            <div class="image round fit">
+              <img src="images/pic05.jpg" alt="" width="320" height="320">
+            </div>
+            <p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin
+              aliquet. </p>
+            <a href="#" class="button">Learn More</a>
+          </div>
+          <div class="col align-center">
+            <div class="image round fit">
+              <img src="images/pic04.jpg" alt="" width="320" height="320">
+            </div>
+            <p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin
+              aliquet. </p>
+            <a href="#" class="button">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="copyright">
+      <ul class="icons">
+        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+      </ul>
+    </div>
+  </footer>
+  <div class="copyright">
+    <!-- Site made with: <a href="https://templated.co/">TEMPLATED.CO</a> -->
+  </div>
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/skel.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <nav id="menu">
+    <ul class="links">
+      <li><a href="index.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Home</a></li>
+      <li><a href="generic.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Generic</a></li>
+      <li><a href="elements.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Elements</a></li>
+    </ul><a href="#menu" class="close" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></a>
+  </nav>
+</body>
+
 </html>
